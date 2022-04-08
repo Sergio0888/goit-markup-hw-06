@@ -14,7 +14,6 @@ body {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root {
@@ -48,6 +47,7 @@ body {
 .nav-menu {
     display: flex;
     align-items: center;
+
 }
 
 .link-list {
@@ -60,12 +60,13 @@ body {
     max-height: 16px;
     fill: var(--brandcolorone);
     margin-right: 10px;
-    transition: 0.4s;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
     color: #212121;
     align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-list-item {
@@ -93,6 +94,7 @@ body {
     height: 4px;
     background: #2196F3;
     border-radius: 2px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active:hover,
@@ -103,6 +105,7 @@ body {
 .active {
     text-decoration: none;
     color: var(--brandcolortwo);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -113,12 +116,13 @@ body {
 .list-contact {
     display: flex;
     align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contact {
     display: flex;
     color: var(--brandcolorone);
-    transition: 0.4s;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-item {
@@ -341,6 +345,7 @@ body {
     height: 44px;
     justify-content: center;
     align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover {
@@ -355,6 +360,7 @@ body {
     height: 20px;
     width: 20px;
     fill: #AFB1B8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Секция иконок */
@@ -372,6 +378,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-image {
@@ -411,6 +418,7 @@ body {
     line-height: 1.72;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-footer:hover,
@@ -471,6 +479,74 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.footer-email-box {
+    width: 570px;
+    position: relative;
+    margin-left: 93px;
+    margin-top: 12px;
+    
+}
+
+.footer-input-email {
+    position: absolute;
+    left: 0;
+    width: 362px;
+    height: calc(50px + 2px);
+    padding-left: 16px;
+    cursor: pointer;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: var(--brandColor);
+}
+.footer-icon-box {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.footer-email-icon {
+    width: 24px;
+    height: 24px;
+}
+.footer-input-email::placeholder {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-input-email:focus-within {
+    outline: 2px solid var(--brandcolortwo);
+}
+
+.footer-email-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    padding: 10px 28px;
+    width: 200px;
+    height: calc(50px + 2px);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}
 
 /* Страница: Портфолио */
 
@@ -498,6 +574,7 @@ body {
     background-color: #F5F4FA;
     border-radius: 4px;
     border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-button button:hover,
@@ -540,6 +617,7 @@ body {
 
 .image-item-li {
     margin-bottom: 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-image-box {
@@ -557,6 +635,7 @@ body {
     top: 0;
     transform: translateY(100%);
     color: var(--brandColor);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: linear-gradient(rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
 }
 
@@ -597,40 +676,30 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-.m-hidden {
-    visibility: hidden;
-    opacity: 0;
-    animation-name: modal;
-    animation-duration: 0.7s;
-}
-
-@keyframes modal {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }    
-}
+/* Модальное окно */
 
 .modal {
     position: relative;
-    width: 528px;
-    height: 581px;
-    padding: 40px;
     opacity: 1;
-    visibility: visible;
+    animation-name: modal;
+    animation-duration: 0.5s;
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
 
+@keyframes modal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 .modal-close {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
     width: 30px;
     height: 30px;
@@ -638,6 +707,7 @@ body {
     top: 8px;
     right: 8px;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
     background: #FFFFFF;
@@ -645,7 +715,8 @@ body {
     box-sizing: border-box;
 }
 
-.modal-close::before,.modal-close::after {
+.modal-close::before,
+.modal-close::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -653,14 +724,194 @@ body {
     width: 15px;
     height: 1.5px;
     background-color: black;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close::after {
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .modal-close::before {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 .modal-close:hover::after,
 .modal-close:hover::before {
     background-color: var(--brandcolortwo);
+}
+
+/* Модальное окною. Форма */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+/* Формы заполнения */
+
+.modal-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.modal-form-input-box {
+    position: relative;
+    height: 42px;
+    cursor: pointer;
+}
+
+.modal-input-item {
+    position: absolute;
+    margin: 14px 15px;
+    left: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-icon {
+    width: 12px;
+    height: 12px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--brandcolorone);
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+.modal-form-input {
+    border: none;
+    padding-left: 42px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus-visible {
+    outline: 2px solid var(--brandcolortwo);
+}
+
+.modal-form-input:focus-visible~.modal-input-item>.modal-input-icon {
+    fill: var(--brandcolortwo);
+}
+
+
+/* Коментарии */
+
+.modal-form-textarea {
+    height: 120px;
+    padding: 12px 16px;
+}
+
+.modal-form-textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Чекбокс */
+
+.form-checkbox-label {
+    position: relative;
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    user-select: none;
+}
+
+.form-checkbox-link {
+    color: var(--brandcolortwo);
+    text-decoration: underline;
+}
+
+.form-checkbox-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox-checkmark {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 2px;
+    top: 1px;
+    border: 3px solid #212121;
+    ;
+    border-radius: 2px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox-icon {
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    fill: transparent;
+    top: -1px;
+    left: -1px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox-input:checked~.form-checkbox-checkmark {
+    background-color: var(--brandcolortwo);
+    border: 3px solid var(--brandcolortwo);
+}
+
+.form-checkbox-input:checked~.form-checkbox-checkmark>.form-checkbox-icon {
+    fill: var(--brandColor);
+}
+
+/* Кнопка */
+
+.modal-btn {
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--brandColor);
+    background-color: var(--brandcolortwo);
+    border-radius: 4px;
+    border: none;
+}
+
+.modal-btn:hover {
+    background-color: #188CE8;
+    color: var(--brandColor);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
